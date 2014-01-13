@@ -5,7 +5,7 @@ Feature: code-breaker submits guess
     For each number in the guess that matches the number in the posistion of a
     number in the secret code, the mark includes one + sign. For each number in
     the guess that matches the number but not the position of a number in the
-    secret code, the mark includes on - sign.
+    secret code, the mark includes on - sign. This should work.
 
 
   Scenario Outline: submit guess
