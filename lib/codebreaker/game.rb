@@ -1,7 +1,10 @@
 module Codebreaker
   class Game
-    def start
 
+    def initialize(output)
+    end
+
+    def start
     end
   end
 end

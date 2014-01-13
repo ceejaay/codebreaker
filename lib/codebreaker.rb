@@ -1,1 +1,1 @@
-require 'codebreaker/game.rb'
+require 'codebreaker/game'
