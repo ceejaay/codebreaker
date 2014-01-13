@@ -7,9 +7,11 @@ class Output
    messages << message
   end
 end
-  def output
-    @output ||= Output.new
-  end
+
+def output
+  @output ||= Output.new
+end
+
 Given /^I am not yet playing$/ do
 end
 
@@ -20,6 +22,11 @@ end
 
 Then /^I should see "([^"]*)"$/ do |message|
   output.messages.should include(message)
+end
+
+Given(/^the secret code is "(.*?)"$/) do |secret|
+  game = Codebreaker::Game.new(output)
+  game.start(secret)
 end
 
 
